@@ -23,7 +23,6 @@ module.exports = {
       content: '加油站,郑晓东,vue组件,vue,开发工具'
     }]
   ],
-  // base: '/', // 这是部署到github相关的配置
   themeConfig: {
     // 密钥
     /* keyPage: {
@@ -53,13 +52,13 @@ module.exports = {
         text: '标签'      // 默认文案 “标签” Tag
       }
     },
-    /* vssueConfig: {
+    vssueConfig: {
       platform: 'github',
       owner: 'OWNER_OF_REPO',
       repo: 'NAME_OF_REPO',
       clientId: 'YOUR_CLIENT_ID',
       clientSecret: 'YOUR_CLIENT_SECRET',
-    }, */
+    },
     nav: [
       { text: 'Notes', link: '/note/', icon: 'reco-document' },
       { text: 'TimeLine', link: '/timeLine/', icon: 'reco-date' },
