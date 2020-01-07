@@ -1,10 +1,10 @@
 {
-  "name": "pual.zheng",
+  "name": "Gas_Staition",
   "short_name": "加油站",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#2196f3",
-  "description": "Gas_Station的个人主页",
+  "description": "加油站的个人主页",
   "theme_color": "blue",
   "icons": [
     {

@@ -1,22 +1,29 @@
 {
   "name": "myBlog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "persion blog",
   "scripts": {
-    "docs:dev": "vuepress dev docs --open",
-    "docs:build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "bash deploy.sh"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengxiaodong502/myVuepressBlog.git"
+  },
+  "keywords": [
+    "zhengxiaodong"
+  ],
+  "author": "zhengxiaodong",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengxiaodong502/myVuepressBlog/issues"
+  },
+  "homepage": "https://github.com/zhengxiaodong502/myVuepressBlog#readme",
+  "dependencies": {
+    "vuepress-theme-reco": "^1.2.0"
+  },
   "devDependencies": {
-    "css-loader": "^3.3.2",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.1",
-    "webpack": "^4.41.2"
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "vuepress": "^1.2.0"
   }
 }
