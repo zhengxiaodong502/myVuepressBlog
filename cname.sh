@@ -1,4 +1,4 @@
-##此文件用于手动部署
+##此文件用于自动动部署
 
 #!/usr/bin/env sh
 
@@ -6,7 +6,7 @@
 set -e
 
 # 生成静态文件
-yarn run build
+#yarn run build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

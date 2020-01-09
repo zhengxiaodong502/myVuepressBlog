@@ -2,7 +2,8 @@ language: node_js
 node_js:
   - lts/*
 script:
-  - yarn run deploy
+  - yarn run build
+  - yarn run cname
 deploy:
   provider: pages
   skip-cleanup: true
