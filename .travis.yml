@@ -3,9 +3,6 @@ node_js:
   - lts/*
 script:
   - yarn run build
-  - yarn run cname
-after_script:
-  - yarn run cname
 deploy:
   provider: pages
   skip-cleanup: true
@@ -14,3 +11,5 @@ deploy:
   keep-history: true
   on:
     branch: master # 项目源码所在的分支
+after_script:
+  - yarn run cname
