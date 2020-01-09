@@ -17,11 +17,18 @@ module.exports = {
       rel: 'apple-touch-icon',
       href: '/logo.png'
     }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
-    ['meta', {
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    /* ['meta', {
       name: 'keywords',
-      content: '加油站,郑晓东,vue组件,vue,开发工具'
-    }]
+      content: 'vue组件,vue,开发工具'
+    }] */
   ],
   themeConfig: {
     // 密钥
@@ -60,8 +67,8 @@ module.exports = {
       clientSecret: 'YOUR_CLIENT_SECRET',
     },
     nav: [
-      { text: 'Notes', link: '/note/', icon: 'reco-document' },
-      { text: 'TimeLine', link: '/timeLine/', icon: 'reco-date' },
+      //  { text: 'Notes', link: '/note/', icon: 'reco-document' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
         items: [{
@@ -74,7 +81,7 @@ module.exports = {
           }
         ]
       }, */
-      { text: 'Contact',
+      { text: '链接',
         icon: 'reco-message',
         items: [
           { text: 'GitHub', link: 'https://github.com/zhengxiaodong502', icon: 'reco-github' },
@@ -84,9 +91,26 @@ module.exports = {
       {
         text: '常用工具',
         items: [
+          { text: '在线便捷',
+            items: [ 
+              { text: '文件转换',link: 'https://convertio.co/zh/'},
+              { text: '常用对照表',link: 'https://tool.oschina.net/commons'},
+              { text: 'babel编译',link: 'https://www.babeljs.cn/repl'},
+              { text: 'PDF编译器',link: 'https://smallpdf.com/cn/pdf-to-word'},
+              { text: 'JSON编译器',link: 'https://www.bejson.com/jsoneditoronline'},
+              { text: 'MD表格生成器',link: 'https://tableconvert.com/?output=text'},
+              { text: '代码格式化',link: 'https://tool.oschina.net/codeformat/html'},
+              { text: '二维码生成器',link: 'https://cli.im/'},
+              { text: '编码转换器',link: 'http://tool.chinaz.com/tools/native_ascii.aspx'},
+              { text: '公式编辑器',link: 'https://zh.numberempire.com/latexequationeditor.php'},
+              { text: 'MD编辑器',link: 'https://www.zybuluo.com/mdeditor'}
+            ]
+          },
           {
-            text: 'typora',
-            link: '/devTools/typora'
+            text: '工具指南',
+            items: [ 
+              { text: 'typora',link: '/devTools/typora'}
+            ]
           }
         ]
       }
@@ -115,8 +139,60 @@ module.exports = {
           // ]
         }
       ]
-    }
-  }
+    },
+    friendLink: [
+      {
+        title: 'vuepress-theme-reco',
+        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+        avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+        link: 'https://vuepress-theme-reco.recoluan.com'
+      },
+      {
+        title: '午后南杂',
+        desc: 'Enjoy when you can, and endure when you must.',
+        email: 'recoluan@qq.com',
+        link: 'https://www.recoluan.com'
+      }
+    ]
+  },
+  plugins: [
+    "screenfull",
+    [
+      "@vuepress-reco/vuepress-plugin-bgm-player",
+      {
+        audios: [
+          {
+            name: 'Basketball',
+            artist: 'JEAN MARIE',
+            url: 'https://nc01-sycdn.kuwo.cn/0941dba7a1728d6c1af9a7c2afd65117/5e168096/resource/n1/71/88/3357805950.mp3',
+            cover: 'http://img3.kuwo.cn/star/albumcover/700/16/83/365404609.jpg'
+          },
+          {
+            name: '绝对无敌',
+            artist: '倪子冈',
+            url: 'https://ip-h5-ri01-sycdn.kuwo.cn/e6809c13febc970ba841fa38e26237f8/5e168310/resource/n2/66/52/401298525.mp3',
+            cover: 'http://img3.kuwo.cn/star/albumcover/120/80/22/822226862.jpg'
+          },
+          {
+            name: '真的，我没事',
+            artist: '符致逸',
+            url: 'https://ip-h5-rh01-sycdn.kuwo.cn/df9218edd3196c9408a2cacf9052a024/5e168601/resource/n3/37/29/1196593046.mp3',
+            cover: 'http://img3.kuwo.cn/star/albumcover/120/80/22/822226862.jpg'
+          }
+        ]
+      }
+    ],
+    /* [
+      '@vuepress/pwa', 
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用",
+          buttonText: "刷新"
+        }
+      }
+    ] */
+  ]
 }
 
 function genSidebarConfig(dir, hasSub) {
