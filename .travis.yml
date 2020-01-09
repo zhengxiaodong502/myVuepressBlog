@@ -3,6 +3,7 @@ node_js:
   - lts/*
 script:
   - yarn run build
+after_script:
   - yarn run cname
 deploy:
   provider: pages
