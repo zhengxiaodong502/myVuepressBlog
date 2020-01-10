@@ -161,23 +161,24 @@ module.exports = {
       "@vuepress-reco/vuepress-plugin-bgm-player",
       {
         audios: [
+          
           {
-            name: 'Basketball',
-            artist: 'JEAN MARIE',
-            url: 'https://nc01-sycdn.kuwo.cn/0941dba7a1728d6c1af9a7c2afd65117/5e168096/resource/n1/71/88/3357805950.mp3',
-            cover: 'http://img3.kuwo.cn/star/albumcover/700/16/83/365404609.jpg'
+            name: '广东爱情故事',
+            artist: 'sun.zheng(翻唱)',
+            url: '/music/广东爱情故事.m4a',
+            cover: '/music/guangdong.jpg'
           },
           {
-            name: '绝对无敌',
-            artist: '倪子冈',
-            url: 'https://ip-h5-ri01-sycdn.kuwo.cn/e6809c13febc970ba841fa38e26237f8/5e168310/resource/n2/66/52/401298525.mp3',
-            cover: 'http://img3.kuwo.cn/star/albumcover/120/80/22/822226862.jpg'
+            name: '三十岁的女人',
+            artist: 'sun.zheng(翻唱)',
+            url: '/music/三十岁的女人.m4a',
+            cover: '/music/三十岁的女人.jpg'
           },
           {
-            name: '真的，我没事',
-            artist: '符致逸',
-            url: 'https://ip-h5-rh01-sycdn.kuwo.cn/df9218edd3196c9408a2cacf9052a024/5e168601/resource/n3/37/29/1196593046.mp3',
-            cover: 'http://img3.kuwo.cn/star/albumcover/120/80/22/822226862.jpg'
+            name: '你就不要想起我',
+            artist: 'sun.zheng(翻唱)',
+            url: '/music/你就不要想起我.m4a',
+            cover: '/music/你就不要想起我.jpg'
           }
         ]
       }
