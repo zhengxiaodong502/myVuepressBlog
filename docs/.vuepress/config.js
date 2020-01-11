@@ -3,7 +3,7 @@ const fs = require('fs')
 module.exports = {
   theme: 'reco',
   title: '加油站的博客',
-  description: '轻轻的你来了,留下你的痕迹',
+  description: '路曼曼其修远兮,吾将上下而求索',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', {
       rel: 'icon',
@@ -42,6 +42,7 @@ module.exports = {
     logo: '/logo.png',
     authorAvatar: '/logo.png',
     serviceWorker: true, // 是否开启 PWA
+    smoothScroll: true,
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -67,7 +68,7 @@ module.exports = {
       clientSecret: 'YOUR_CLIENT_SECRET',
     },
     nav: [
-      //  { text: 'Notes', link: '/note/', icon: 'reco-document' },
+      { text: '笔记', link: '/note/', icon: 'reco-document' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
@@ -199,14 +200,16 @@ module.exports = {
 function genSidebarConfig(dir, hasSub) {
   let p = path.join(__dirname, '../', dir)
   let files = fs.readdirSync(p)
+  console.log(fs)
+  console.log(files)
   let subDir = hasSub ?
     dir.split('/')[1] :
     dir.split('/')[1] + '/' + dir.split('/')[2]
-  files = files.map(item => {
-    item = subDir ?
-      subDir + '/' + path.basename(item, '.md') :
-      path.basename(item, '.md')
-    return item
-  })
+    files = files.map(item => {
+      item = subDir ?
+        subDir + '/' + path.basename(item, '.md') :
+        path.basename(item, '.md')
+      return item
+    })
   return files
 }

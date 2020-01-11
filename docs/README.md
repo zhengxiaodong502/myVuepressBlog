@@ -2,7 +2,7 @@
 home: true
 bgImage: '/all_start.jpg'
 bgImageStyle: {
-  height: '780px'
+  height: '770px'
 }
 heroText: 'Hero 标题'
 tagline: 'Hero 副标题sdfsdf'
