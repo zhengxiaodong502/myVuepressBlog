@@ -43,6 +43,7 @@ module.exports = {
     authorAvatar: '/logo.png',
     serviceWorker: true, // 是否开启 PWA
     smoothScroll: true,
+    sidebar: 'auto', //在所有页面中启用自动生成侧栏
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -117,27 +118,34 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/note/': [
-        {
-          title: 'HTML5',
-          collapsable: false,
-          children: genSidebarConfig('note/html5', true)
+      // '/note/': [
+      //   {
+      //     title: 'HTML5',
+      //     collapsable: false,
+      //     children: genSidebarConfig('note/html5', true)
           
-        },
+      //   },
+      //   {
+      //     title: 'CSS',
+      //     collapsable: false,
+      //     children: genSidebarConfig('note/css', true)
+      //   },
+      //   {
+      //     title: '前端单元测试',
+      //     collapsable: false,
+      //     children: genSidebarConfig('note/fe-unit-test', true)
+      //     // children: [
+      //     //   'fe-unit-test/chai',
+      //     //   'fe-unit-test/mocha',
+      //     //   'fe-unit-test/vueTestUtils'
+      //     // ]
+      //   }
+      // ]
+      '/views/': [
         {
-          title: 'CSS',
+          title: 'ES2019',
           collapsable: false,
-          children: genSidebarConfig('note/css', true)
-        },
-        {
-          title: '前端单元测试',
-          collapsable: false,
-          children: genSidebarConfig('note/fe-unit-test', true)
-          // children: [
-          //   'fe-unit-test/chai',
-          //   'fe-unit-test/mocha',
-          //   'fe-unit-test/vueTestUtils'
-          // ]
+          children: genSidebarConfig('views/前端/es9', true)
         }
       ]
     },
@@ -157,7 +165,6 @@ module.exports = {
     ]
   },
   plugins: [
-    "screenfull",
     [
       "@vuepress-reco/vuepress-plugin-bgm-player",
       {
@@ -184,6 +191,17 @@ module.exports = {
         ]
       }
     ],
+    [
+      "@vuepress/medium-zoom",
+      {
+        selector: 'img.zoom-custom-imgs',
+        // medium-zoom options here
+        // See: https://github.com/francoischalifour/medium-zoom#options
+        options: {
+          margin: 16
+        }
+      }
+    ]
     /* [
       '@vuepress/pwa', 
       {

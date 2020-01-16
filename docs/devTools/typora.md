@@ -61,7 +61,6 @@ H~2~O 下角标前后一个“~”
 ```
 
 <center>文本居中</center>
-
 ```
 <center>这是要居中的文本内容</center>
 ```
@@ -114,7 +113,6 @@ H~2~O 下角标前后一个“~”
 支持内嵌CSS样式
 
 <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内联样式</p>
-
 ```
 <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内联样式</p>
 ```

@@ -4,7 +4,7 @@ bgImage: '/all_start.jpg'
 bgImageStyle: {
   height: '770px'
 }
-heroText: 'Hero 标题'
+heroText: '你球衣前面的名字，比后面的名字更重要。'
 tagline: 'Hero 副标题sdfsdf'
 heroImageStyle: {
   maxWidth: '600px',
