@@ -1,6 +1,7 @@
 ---
 title: chai.js笔记
 sidebarDepth: 2
+date: 2019-08-31
 tags:
  - 单元测试
 categories:
