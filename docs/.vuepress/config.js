@@ -118,29 +118,34 @@ module.exports = {
       }
     ],
     sidebar: {
-      // '/note/': [
-      //   {
-      //     title: 'HTML5',
-      //     collapsable: false,
-      //     children: genSidebarConfig('note/html5', true)
+      '/note/': [
+        {
+          title: 'Vue',
+          collapsable: false,
+          children: genSidebarConfig('note/vue', true)
+        },
+        {
+          title: 'HTML5',
+          collapsable: true,
+          children: genSidebarConfig('note/html5', true)
           
-      //   },
-      //   {
-      //     title: 'CSS',
-      //     collapsable: false,
-      //     children: genSidebarConfig('note/css', true)
-      //   },
-      //   {
-      //     title: '前端单元测试',
-      //     collapsable: false,
-      //     children: genSidebarConfig('note/fe-unit-test', true)
-      //     // children: [
-      //     //   'fe-unit-test/chai',
-      //     //   'fe-unit-test/mocha',
-      //     //   'fe-unit-test/vueTestUtils'
-      //     // ]
-      //   }
-      // ]
+        },
+        {
+          title: 'CSS',
+          collapsable: true,
+          children: genSidebarConfig('note/css', true)
+        },
+        /* {
+          title: '前端单元测试',
+          collapsable: true,
+          children: genSidebarConfig('note/fe-unit-test', true)
+          // children: [
+          //   'fe-unit-test/chai',
+          //   'fe-unit-test/mocha',
+          //   'fe-unit-test/vueTestUtils'
+          // ]
+        } */
+      ],
       '/views/': [
         {
           title: 'ES2019',
