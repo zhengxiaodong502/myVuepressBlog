@@ -8,9 +8,11 @@ categories:
  - 前端
 ---
 
-> 本文中所用到的测试工具如下  
-> kmci: karma + mocha + chai + istanbul  
-> 此文只涉及在vue-cli3中如何集成以上工具，不再详细介绍各个工具
+::: tip 
+本文中所用到的测试工具如下  
+kmci: karma + mocha + chai + istanbul  
+此文只涉及在vue-cli3中如何集成以上工具，不再详细介绍各个工具
+:::
 
 <!-- more -->
 

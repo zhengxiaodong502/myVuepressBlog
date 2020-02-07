@@ -134,17 +134,11 @@ module.exports = {
           title: 'CSS',
           collapsable: true,
           children: genSidebarConfig('note/css', true)
-        },
-        /* {
-          title: '前端单元测试',
-          collapsable: true,
-          children: genSidebarConfig('note/fe-unit-test', true)
           // children: [
-          //   'fe-unit-test/chai',
-          //   'fe-unit-test/mocha',
-          //   'fe-unit-test/vueTestUtils'
+          //   'css/css3新特性',
+          //   'css/css3Flip'
           // ]
-        } */
+        }
       ],
       '/views/': [
         {

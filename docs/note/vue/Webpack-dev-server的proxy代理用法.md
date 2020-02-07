@@ -5,11 +5,13 @@ tags:
  - webpack
  - proxy
 categories:
- - 前端
+ - webpack
 ---
 
-> 1. 如果你有单独的后端开发服务器 API，并且希望在同域名下发送 API 请求 ，那么代理某些 URL 会很有用。
-> 2. 解决开发环境的跨域问题(不用在去配置nginx和host, 爽歪歪~~）
+::: tip 
+ 1. 如果你有单独的后端开发服务器 API，并且希望在同域名下发送 API 请求 ，那么代理某些 URL 会很有用。
+ 2. 解决开发环境的跨域问题(不用在去配置nginx和host, 爽歪歪~~）
+::: 
 <!-- more -->
 
 1. ## 在`webpack.config.js`中配置
