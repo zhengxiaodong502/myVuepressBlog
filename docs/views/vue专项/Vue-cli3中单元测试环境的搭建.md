@@ -1,11 +1,10 @@
 ---
 title: Vue-cli3中的前端单元测试之环境搭建
 date: 2019-07-18
-sidebar: auto
 tags: 
  - 单元测试
 categories:
- - 前端
+ - Vue
 ---
 
 ::: tip 

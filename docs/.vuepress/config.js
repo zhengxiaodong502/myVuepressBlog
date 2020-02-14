@@ -70,6 +70,7 @@ module.exports = {
     },
     nav: [
       { text: '笔记', link: '/note/', icon: 'reco-document' },
+      { text: '前端专项', link: '/views/', icon: 'reco-document' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
@@ -138,14 +139,26 @@ module.exports = {
           //   'css/css3新特性',
           //   'css/css3Flip'
           // ]
-        }
+        },
+        {
+          title: 'iview(踩坑)',
+          collapsable: true,
+          children: genSidebarConfig('note/iview', true)
+          
+        },
       ],
       '/views/': [
         {
           title: 'ES2019',
           collapsable: false,
-          children: genSidebarConfig('views/前端/es9', true)
+          children: genSidebarConfig('views/es9', true)
+        },
+        {
+          title: 'vue专项',
+          collapsable: true,
+          children: genSidebarConfig('views/vue专项', true)
         }
+        
       ]
     },
     friendLink: [
