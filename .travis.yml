@@ -2,4 +2,17 @@ language: node_js
 node_js:
   - lts/*
 script:
-  - yarn run deploy
+  - yarn run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist # 项目打包后生成的文件的目录
+  github-token: $GITHUB_TOKEN # 这里这个变量就是刚才配置 token 时填写的那个变量
+  keep-history: true
+  repo: 
+    github: git@github.com:zhengxiaodong502/zhengxiaodong502.github.io.git
+    gitee: git@gitee.com:coding_zxd/myVuepressBlog.git
+  on:
+    branch: master # 项目源码所在的分支
+after_script:
+  - yarn run cname
