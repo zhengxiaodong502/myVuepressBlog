@@ -43,6 +43,7 @@ module.exports = {
     authorAvatar: '/logo.png',
     serviceWorker: true, // 是否开启 PWA
     smoothScroll: true,
+    lastUpdated: 'Last Updated',
     sidebar: 'auto', //在所有页面中启用自动生成侧栏
     // 搜索设置
     search: true,
@@ -70,7 +71,7 @@ module.exports = {
     },
     nav: [
       { text: '笔记', link: '/note/', icon: 'reco-document' },
-      { text: '前端专项', link: '/views/', icon: 'reco-document' },
+      { text: '前端专项', link: '/views/es9/ES2019', icon: 'reco-document' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
