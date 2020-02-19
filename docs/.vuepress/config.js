@@ -4,7 +4,6 @@ module.exports = {
   theme: 'reco',
   title: '加油站的博客',
   description: '路曼曼其修远兮,吾将上下而求索',
-  base:'/myvuepressblog/',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', {
       rel: 'icon',
