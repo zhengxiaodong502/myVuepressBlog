@@ -3,7 +3,7 @@ const fs = require('fs')
 module.exports = {
   theme: 'reco',
   title: '加油站的博客',
-  description: '路曼曼其修远兮,吾将上下而求索',
+  description: '路漫漫其修远兮,吾将上下而求索',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', {
       rel: 'icon',
@@ -62,12 +62,13 @@ module.exports = {
         text: '标签'      // 默认文案 “标签” Tag
       }
     },
-    vssueConfig: {
-      platform: 'github',
-      owner: 'OWNER_OF_REPO',
-      repo: 'NAME_OF_REPO',
-      clientId: 'YOUR_CLIENT_ID',
-      clientSecret: 'YOUR_CLIENT_SECRET',
+    valineConfig: {
+      appId: 'pAGoYyjRlGL53PAeso2k0E1G-gzGzoHsz',// your appId
+      appKey: 'aL9Tdsu87upctjvHO0UNw10v', // your appKey
+      placeholder: '轻轻的你来了,留下你的痕迹',
+      avatar: 'wavatar',
+      visitor: true,
+      serverUrl: 'https://www.zxdblog.net/'
     },
     nav: [
       { text: '笔记', link: '/note/', icon: 'reco-document' },
@@ -142,6 +143,12 @@ module.exports = {
           // ]
         },
         {
+          title: 'JavaScript',
+          collapsable: true,
+          children: genSidebarConfig('note/JavaScript', true)
+          
+        },
+        {
           title: 'iview(踩坑)',
           collapsable: true,
           children: genSidebarConfig('note/iview', true)
@@ -158,6 +165,11 @@ module.exports = {
           title: 'vue专项',
           collapsable: true,
           children: genSidebarConfig('views/vue专项', true)
+        },
+        {
+          title: '面试题',
+          collapsable: true,
+          children: genSidebarConfig('views/面试题', true)
         }
         
       ]
@@ -181,6 +193,12 @@ module.exports = {
     [
       "@vuepress-reco/vuepress-plugin-bgm-player",
       {
+        position: { 
+          right: '10px',
+          bottom: '10px',
+          'z-index': '999999'
+        },
+        floatPosition: 'right',
         audios: [
           
           {
@@ -215,7 +233,7 @@ module.exports = {
         }
       }
     ]
-    /* [
+    [
       '@vuepress/pwa', 
       {
         serviceWorker: true,
@@ -224,7 +242,7 @@ module.exports = {
           buttonText: "刷新"
         }
       }
-    ] */
+    ]
   ]
 }
 

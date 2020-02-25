@@ -25,7 +25,7 @@
     "vuepress-theme-reco": "^1.2.0"
   },
   "devDependencies": {
-    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.1",
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.2",
     "@vuepress-reco/vuepress-plugin-screenfull": "^1.0.1",
     "@vuepress/plugin-medium-zoom": "^1.2.0",
     "@vuepress/plugin-pwa": "^1.2.0",
