@@ -13,7 +13,7 @@ tags:
 
 ### 标题
 
-```
+```javascript
 # 一阶标题  或者快捷键Ctrl+1
 ## 二阶标题 或者快捷键Ctrl+2
 ### 三阶标题    或者快捷键Ctrl+3
@@ -24,38 +24,38 @@ tags:
 
 ### <u>下划线</u>
 
-```
+```javascript
 <u>下划线的内容</u> 或按快捷键Ctrl+U
 ```
 
 ### **字体加粗**
 
-```
+```javascript
 **加粗内容**    或按快捷键Ctrl+B
 ```
 
 ### *斜体*
 
-```
+```javascript
 *倾斜内容*  或按快捷键Ctrl+I
 ```
 
 ### ~~删除线~~
 
-```
+```javascript
 ~~删除线的内容~~  或按快捷键Alt+Shift+5
 ```
 
 ### 文字高亮
 
-```
+```javascript
 ==我是最重要的==
 
 ```
 
 ### 角标
 
-```
+```javascript
 x^2^    H~2~O
 x^2^ 上角标前后一个“^”
 
@@ -64,7 +64,7 @@ H~2~O 下角标前后一个“~”
 
 ### 文本居中
 
-```
+```javascript
 <center>这是要居中的文本内容</center>
 ```
 
@@ -74,7 +74,7 @@ H~2~O 下角标前后一个“~”
    2. 有序二
 2. 有序列表二
 
-```
+```javascript
 1. 有序列表一
     1. 有序一
     2. 有序二
@@ -92,7 +92,7 @@ H~2~O 下角标前后一个“~”
 
 * 无序列表三
 
-```
+```javascript
 - 无序列表一
   - 嵌套一
   - 嵌套二
@@ -106,7 +106,7 @@ H~2~O 下角标前后一个“~”
 - [ ] 参加会议
 - [x] 中超足球赛
 
-```
+```javascript
 -[] 参加会议
 -[x] 中超足球赛
 -[x] 数学
@@ -117,7 +117,7 @@ H~2~O 下角标前后一个“~”
 
 ### 支持内嵌CSS样式
 
-```
+```javascript
 <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内联样式</p>
 ```
 
@@ -125,7 +125,7 @@ H~2~O 下角标前后一个“~”
 
 <xxx@outlook.com>
 
-```
+```javascript
 <xxx@outlook.com>
 ```
 
@@ -136,7 +136,7 @@ H~2~O 下角标前后一个“~”
 | xys  | 男   |
 | cxy  | 女   |
 
-```
+```javascript
 快捷键window:Ctrl+T  mac:command + option + T 弹出对话框
 左对齐 :---
 居中 :---:
@@ -148,7 +148,7 @@ H~2~O 下角标前后一个“~”
 ***
 
 
-```
+```javascript
 ***+回车  
 ---+回车  
 ```
@@ -159,7 +159,7 @@ H~2~O 下角标前后一个“~”
 
 <img src="/logo.png" alt="励志男孩" style="zoom:50%;" />
 
-```
+```javascript
 ![图片内容](https://profile.csdnimg.cn/8/1/A/1_gas_station)
  也可使用快捷键 mac: ^ + command + i
 PS：也可将图片直接拖拽进来，自动生成链接
@@ -171,7 +171,7 @@ PS：也可将图片直接拖拽进来，自动生成链接
 
 [百度一下](https://www.baidu.com/)
 
-```
+```javascript
 [百度一下，你就知道](https://www.baidu.com/)
 插入链接：ctrl + K
 ```
@@ -180,7 +180,7 @@ PS：也可将图片直接拖拽进来，自动生成链接
 
 <http://www.baidu.com>
 
-```
+```javascript
 <http://www.baidu.com>
 PS：按住Ctrl点击链接可直接打开。
 ```
@@ -193,7 +193,7 @@ $$
 
 Typora支持加入用LaTeX写成的数学公式，并且在软件界面下用MathJax直接渲染。
 
-```
+```javascript
 *1.行内公式(inline math)，可以在偏好设置中单独打开，由一个美元符号将公式围起来；name=\prod \frac{1}{i^2}$
 *2.行外公式，直接按Ctrl+Shift+M；(双$+回车也可做到)
 ```
@@ -206,7 +206,7 @@ Typora支持加入用LaTeX写成的数学公式，并且在软件界面下用Mat
 
 > 引用文本
 
-```
+```javascript
 >+空格    或按快捷键Ctrl+Shift+Q
 ```
 
@@ -214,7 +214,7 @@ Typora支持加入用LaTeX写成的数学公式，并且在软件界面下用Mat
 
 [^1]: 标号的含义
 
-```
+```javascript
 这是我们的标号[^1]
 [^1]:标号的含义
 ```
@@ -225,13 +225,13 @@ Typora支持加入用LaTeX写成的数学公式，并且在软件界面下用Mat
 
 :happy开心:
 
-```
+```javascript
 :happy:（两个冒号中间加上描述语，比如这个就是happy）
 ```
 
 ### 搜索
 
-```
+```javascript
 选中某句话：Ctrl+L
 选中某个单词：Ctrl+D
 搜索：Ctrl+F
@@ -240,19 +240,19 @@ Typora支持加入用LaTeX写成的数学公式，并且在软件界面下用Mat
 
 ### 目录生成：
 
-```
+```javascript
 目录生成： + enter [TOC]
 ```
 
 ### 公式块
 
-```
+```javascript
 Ctrl+Shift+M或者开头“$$”
 ```
 
 ## Typora快捷键整合
 
-```
+```javascript
 Ctrl+1  一阶标题    Ctrl+B  字体加粗
 Ctrl+2  二阶标题    Ctrl+I  字体倾斜
 Ctrl+3  三阶标题    Ctrl+U  下划线

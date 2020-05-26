@@ -8,7 +8,6 @@ categories:
  - Vue
 ---
 
-
 1.使用场景
 
 在vue项目中使用 async await处理并行多个异步,是因为项目中没有使用`transform-runtime`将es6+转换成es5
@@ -33,7 +32,7 @@ step2: 配置 .babelrc
 
 .babelrc 如下代码
 
-```
+```javascript
 "presets": [
       [
           "env",

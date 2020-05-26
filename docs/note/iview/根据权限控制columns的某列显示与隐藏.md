@@ -23,7 +23,7 @@ categories:
 
 举个例子，代码如下
 
-```
+```javascript
 created() {
     userType(type) {
       // type: 1 普通用户   2 vip用户  如果是普通用户则不能看到 couponAbleNum 这一列。

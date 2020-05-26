@@ -26,7 +26,7 @@ categories:
 
 因为编辑页是做了表达校验的,在ruleValidate对象中，数组时必须要声明 type:'array'，否则校验不通过，且一定要注意双向绑定的数据类型跟后台返回的数组里面字段的数据类型是否一致，如果不一致，是不可能渲染得上的
 
-```
+```javascript
 ruleValidate: {
         checkAllGroup: [
           { required: true, type: 'array', message: '请选择角色', trigger: 'change' }        // 注：数组时必须要声明 type:'array'

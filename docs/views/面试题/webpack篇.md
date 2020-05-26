@@ -203,7 +203,7 @@ module.exports = {
 
 不过很多组件库已经提供了现成的解决方案，如Element出品的`babel-plugin-component`和AntDesign出品的`babel-plugin-import` 安装以上插件后，在`.babelrc`配置中或`babel-loader`的参数中进行设置，即可实现组件按需加载了。
 
-```
+```javascript
 {
   "presets": [["es2015", { "modules": false }]],
   "plugins": [

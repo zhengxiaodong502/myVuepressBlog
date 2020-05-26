@@ -29,7 +29,7 @@ step1: `npm i babel-plugin-transform-runtime -D  注意babel的版本是6.x.x �
 
 .babelrc 如下代码
 
-```
+```javascript
 "plugins": [
       [
         "transform-runtime",

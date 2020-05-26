@@ -22,7 +22,7 @@ categories:
 
 .解决方案1:
 
-```
+```javascript
 handleSubmit(name) {
       let self = this;
       this.$refs[name].validate((valid) => {
@@ -40,7 +40,7 @@ handleSubmit(name) {
 
 .解决方案2:
 
-```
+```html
 <Modal title="xxx" v-model="showRejectModal">
    <!--重点就是下面的代码了-->
    <div slot="footer">

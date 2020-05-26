@@ -28,7 +28,7 @@ categories:
 
 5.解决方案 (已解决加入)
 
-```
+```html
 <Form-item label="全天/时间范围" prop="run_time">
             <DatePicker :value="formValidate.run_time" @on-change="selectTime" @on-clear="clearTime" type="datetimerange" placement="bottom-end" placeholder="开始时间-结束时间" style="width: 500px"></DatePicker>
  </Form-item>
@@ -52,7 +52,7 @@ data () {
 
 规则校验如下：
 
-```
+```javascript
 ruleValidate: {
          run_time: [{
           type: 'array',

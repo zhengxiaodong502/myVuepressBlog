@@ -29,7 +29,7 @@ categories:
 
 校验中把 trigger: 'blur'去掉即可
 代码如下：
-```
+```javascript
 ruleValidate: {
         str: [
           { required: true, message: '请选择分类' }

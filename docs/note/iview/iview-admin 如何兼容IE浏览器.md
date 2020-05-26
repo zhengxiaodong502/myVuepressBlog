@@ -10,17 +10,17 @@ categories:
 
 
 1. 安装babel-polyfill
-```
+```bash
 yarn add babel-polyfill --save
 ```
 
 2. src/main.js 引入babel-polyfill
-```
+```javascript
 import '@babel/polyfill
 ```
 
 3. 在根目录增加babel.config.js文件
-  ```
+  ```typescript
   module.exports = {
     presets: [
       ['@vue/app', {
@@ -31,7 +31,7 @@ import '@babel/polyfill
   ```
 
 4. vue.config.js引用babel-polyfill并且加入配置
-  ```
+  ```typescript
   require('babel-polyfill')
   module.exports = {
     ...{ /* 一些别的配置 */ },

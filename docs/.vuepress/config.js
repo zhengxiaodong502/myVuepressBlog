@@ -72,7 +72,7 @@ module.exports = {
     },
     nav: [
       { text: '笔记', link: '/note/', icon: 'reco-document' },
-      { text: '前端专项', link: '/views/es9/ES2019', icon: 'reco-document' },
+      { text: '前端专项', link: '/views/es6+/ES2019', icon: 'reco-document' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
@@ -108,7 +108,8 @@ module.exports = {
               { text: '二维码生成器',link: 'https://cli.im/'},
               { text: '编码转换器',link: 'http://tool.chinaz.com/tools/native_ascii.aspx'},
               { text: '公式编辑器',link: 'https://zh.numberempire.com/latexequationeditor.php'},
-              { text: 'MD编辑器',link: 'https://www.zybuluo.com/mdeditor'}
+              { text: 'MD编辑器',link: 'https://www.zybuluo.com/mdeditor'},
+              {text: 'MD编辑器（微信版）',link: 'https://mdnice.com/'}
             ]
           },
           {
@@ -157,9 +158,9 @@ module.exports = {
       ],
       '/views/': [
         {
-          title: 'ES2019',
+          title: 'ES6+',
           collapsable: false,
-          children: genSidebarConfig('views/es9', true)
+          children: genSidebarConfig('views/es6+', true)
         },
         {
           title: 'vue专项',

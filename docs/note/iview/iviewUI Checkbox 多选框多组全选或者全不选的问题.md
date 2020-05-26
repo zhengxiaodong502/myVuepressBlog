@@ -16,7 +16,7 @@ categories:
 
 父组件：
 
-```
+```html
 <Modal
         width="900"
         v-model="modalAuthority"
@@ -46,7 +46,7 @@ categories:
 
 子组件：创建一个authority-list.vue 子组件
 
-```
+```html
 <template>
     <div style="margin-left: 10px">
       <CheckboxGroup>
