@@ -72,7 +72,7 @@ module.exports = {
     },
     nav: [
       { text: '笔记', link: '/note/', icon: 'reco-document' },
-      { text: '前端专项', link: '/views/es6+/ES2019', icon: 'reco-document' },
+      { text: '前端专项', link: '/views/debug/1.Chrome_introduce.md', icon: 'reco-document' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       /* {
         text: '多语言',
@@ -158,8 +158,13 @@ module.exports = {
       ],
       '/views/': [
         {
+          title: 'debug(调试)系列',
+          collapsable: true,
+          children: genSidebarConfig('views/debug', true)
+        },
+        {
           title: 'ES6+',
-          collapsable: false,
+          collapsable: true,
           children: genSidebarConfig('views/es6+', true)
         },
         {
@@ -191,7 +196,7 @@ module.exports = {
     ]
   },
   plugins: [
-    [
+    /* [
       "@vuepress-reco/vuepress-plugin-bgm-player",
       {
         position: { 
@@ -222,7 +227,7 @@ module.exports = {
           }
         ]
       }
-    ],
+    ], */
     [
       "@vuepress/medium-zoom",
       {
